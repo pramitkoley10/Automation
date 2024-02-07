@@ -15,7 +15,6 @@ public class frame {
 		
 		Driver.get("https://the-internet.herokuapp.com/");
 		Driver.findElement(By.xpath("//div[@id='content']/ul/li/a[@href='/nested_frames']")).click();
-		//Driver.switchTo().frame(Driver.findElement(By.xpath("//html//frameset")));
 		Driver.switchTo().frame(Driver.findElement(By.xpath("//frame[@name='frame-top']")));
 		Driver.switchTo().frame(Driver.findElement(By.name("frame-middle")));
 		String k = Driver.findElement(By.xpath("//div[@id='content']")).getText();
