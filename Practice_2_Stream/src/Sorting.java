@@ -26,6 +26,18 @@ public class Sorting {
 		driver.findElement(By.xpath("//div[@class='cart']/a[2]")).click();
 		String w1 = window(driver);
 		sorting(driver);
+		String atb = driver.findElement(By.xpath("//a[@aria-label='Next']")).getAttribute("aria-disabled");
+		
+		 do{
+			
+		    driver.findElement(By.xpath("//a[@aria-label='Next']")).click();
+		    System.out.println("---------");
+		    sorting(driver);
+		    Thread.sleep(2000);
+		    atb = driver.findElement(By.xpath("//a[@aria-label='Next']")).getAttribute("aria-disabled");
+		    
+		}while(atb.contains("false"));
+		 
 		driver.close();
 		w.until(ExpectedConditions.numberOfWindowsToBe(1));
 		driver.switchTo().window(w1);
@@ -43,7 +55,6 @@ public class Sorting {
 	
 	public static void sorting(WebDriver driver) {
 		List<WebElement> Elements=driver.findElements(By.xpath("//table[@class='table table-bordered']/tbody/tr/td[1]"));
-		
 		ArrayList<String>vegs = new ArrayList(Elements.size());
 		for(int i=0;i<Elements.size();i++) {
 			vegs.add(driver.findElements(By.xpath("//table[@class='table table-bordered']/tbody/tr")).get(i).getText());
