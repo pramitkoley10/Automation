@@ -1,72 +1,48 @@
-package rahulshettyacademyShopping.website;
+package rahulshettyacademyShopping.website.Tests;
 
-import java.time.Duration;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import java.io.IOException;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import rahulshettyacademyShopping.website.PageObjects.AddToCartPage;
+import rahulshettyacademyShopping.website.PageObjects.FinalPage;
+import rahulshettyacademyShopping.website.PageObjects.ProductCatalogue;
 import rahulshettyacademyShopping.website.PageObjects.landingpage;
+import rahulshettyacademyShopping.website.TestsComponent.BaseTest;
 
-public class StandAloneTest {
+public class StandAloneTest extends BaseTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void submitOrder() throws IOException {
 		// TODO Auto-generated method stub
-		
-		String productname="ADIDAS ORIGINAL";
-		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		landingpage login = new landingpage(driver);
-		login.goTo();
-		
-		login.logindata("Pramitkoley@mail.com","Password@123");
-		
-		//main page
-		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
-		
-		List<WebElement> items = driver.findElements(By.cssSelector(".mb-3"));
-		WebElement product = items.stream().filter(item->item.findElement(By.cssSelector("b")).getText().equals(productname)).findFirst().orElse(null);
-		product.findElement(By.cssSelector(".btn.w-10.rounded:last-child")).click();
-		
-		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.name("Product Added To Cart")));
-		
-		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
-		
-		//add to cart
-		List<WebElement>addtocartlists = driver.findElements(By.cssSelector(".cartSection h3"));
-		boolean ans = addtocartlists.stream().anyMatch(addtocartlist->addtocartlist.getText().equalsIgnoreCase(productname));
+
+		String productname = "ADIDAS ORIGINAL";
+
+		landingpage landingpage =  lunchApplication();
+		ProductCatalogue ProductCatalogue = landingpage.logindata("Pramitkoley@mail.com", "Password@123");
+
+		// main page
+
+		ProductCatalogue.getItemstList();
+		ProductCatalogue.addProductToCart(productname);
+		AddToCartPage AddToCartPage = ProductCatalogue.addToCart();
+
+		// add to cart
+
+		boolean ans = AddToCartPage.getVerifyAddToCartList(productname);
 		Assert.assertTrue(ans);
-		driver.findElement(By.cssSelector(".totalRow button")).click();
-		
-		
-		//payment page
-		driver.findElement(By.cssSelector(".form-group input")).sendKeys("ind");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("i.fa.fa-search")));
-		Actions a =new Actions(driver);
-		a.scrollToElement(driver.findElement(By.cssSelector(".form-group input"))).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
-		
-		driver.findElement(By.cssSelector(".actions a")).click();
-		
-		//final page
-		String Thankyou = driver.findElement(By.cssSelector(".hero-primary")).getText();
+		AddToCartPage.getCheckoutButton();
+
+		// payment page
+
+		AddToCartPage.getCountry();
+		FinalPage FinalPage = AddToCartPage.getPlaceOrder();
+
+		// final page
+
+		String Thankyou = FinalPage.getThankYouStatus();
 		Assert.assertTrue(Thankyou.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-		
-		
+
 		driver.close();
 
 	}

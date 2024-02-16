@@ -1,15 +1,17 @@
 package rahulshettyacademyShopping.website.PageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class landingpage {
+import rahulshettyacademyShopping.website.abstractcomponents.AbstractComponents;
+
+public class landingpage extends AbstractComponents {
 	WebDriver driver;
 	
 	public landingpage(WebDriver driver){
+		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -30,10 +32,12 @@ public class landingpage {
 	
 	
 	
-	public  void logindata(String username, String password) {
+	public ProductCatalogue logindata(String username, String password) {
 		userEmail.sendKeys(username);
 		userPassword.sendKeys(password);
 		submit.click();
+		ProductCatalogue ProductCatalogue = new ProductCatalogue(driver);
+		return ProductCatalogue;
 	}
 	
 
