@@ -1,5 +1,6 @@
 package rahulshettyacademyShopping.website.PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +27,13 @@ public class landingpage extends AbstractComponents {
 	@FindBy(id="login")
 	WebElement submit;
 	
+	
+	@FindBy(xpath="//div[@id='toast-container']")
+	WebElement WrongInputStatus;
+	
+	
+	By FindBy = By.xpath("//div[@id='toast-container']");
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client");
 	}
@@ -38,6 +46,12 @@ public class landingpage extends AbstractComponents {
 		submit.click();
 		ProductCatalogue ProductCatalogue = new ProductCatalogue(driver);
 		return ProductCatalogue;
+	}
+	
+	public Boolean getIncorrectInput() {
+		waitForElementToAppear(FindBy);
+		Boolean ans = WrongInputStatus.getText().equalsIgnoreCase("Incorrect email or password.");
+		return ans;
 	}
 	
 
