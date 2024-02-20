@@ -2,93 +2,53 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T18:24:11 IST" name="Suite" finished-at="2024-02-19T18:24:54 IST" duration-ms="42876">
+  <suite started-at="2024-02-20T10:54:21 IST" name="Suite" finished-at="2024-02-20T10:54:39 IST" duration-ms="18092">
     <groups>
       <group name="full test">
-        <method signature="StandAloneTest.submitOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1cf6d1be]" name="submitOrder" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
-        <method signature="StandAloneTest.orderHistry(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1cf6d1be]" name="orderHistry" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
+        <method signature="StandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" name="submitOrder" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
+        <method signature="StandAloneTest.orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" name="orderHistry" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
       </group> <!-- full test -->
     </groups>
-    <test started-at="2024-02-19T18:24:11 IST" name="Test" finished-at="2024-02-19T18:24:54 IST" duration-ms="42876">
+    <test started-at="2024-02-20T10:54:21 IST" name="Test" finished-at="2024-02-20T10:54:39 IST" duration-ms="18092">
       <class name="rahulshettyacademyShopping.website.Tests.StandAloneTest">
-        <test-method signature="submitOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1cf6d1be]" started-at="2024-02-19T18:24:11 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-19T18:24:32 IST" duration-ms="21141" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:21 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-20T10:54:30 IST" duration-ms="9198" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Pramitkoley@mail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL]]>
+                <![CDATA[{productname=ADIDAS ORIGINAL, password=Password@123, username=Pramitkoley@mail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="submitOrder(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1cf6d1be]" started-at="2024-02-19T18:24:32 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-19T18:24:40 IST" duration-ms="7707" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:30 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-20T10:54:33 IST" duration-ms="2934" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pramitkoley@mail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[IPHONE 13 PRO]]>
+                <![CDATA[{productname=IPHONE 13 PRO, password=Pramitkoley@mail.com, username=Password@123}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="orderHistry(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1cf6d1be]" started-at="2024-02-19T18:24:40 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-19T18:24:48 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="7749" status="PASS">
+        <test-method signature="orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:33 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-20T10:54:36 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="3071" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Pramitkoley@mail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL]]>
+                <![CDATA[{productname=ADIDAS ORIGINAL, password=Password@123, username=Pramitkoley@mail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistry -->
-        <test-method signature="orderHistry(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1cf6d1be]" started-at="2024-02-19T18:24:48 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-19T18:24:54 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="6165" status="PASS">
+        <test-method signature="orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:36 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-20T10:54:39 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="2836" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pramitkoley@mail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[IPHONE 13 PRO]]>
+                <![CDATA[{productname=IPHONE 13 PRO, password=Pramitkoley@mail.com, username=Password@123}]]>
               </value>
             </param>
           </params>

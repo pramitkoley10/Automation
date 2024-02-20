@@ -38,6 +38,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/DemoSelenium"/>
-	<classpathentry kind="lib" path="/Users/pramitk/Downloads/failsafe-3.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/prami/Downloads/Compressed/failsafe-3.3.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
