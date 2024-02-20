@@ -1,17 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="7" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-20T10:54:21 IST" name="Suite" finished-at="2024-02-20T10:54:39 IST" duration-ms="18092">
+  <suite started-at="2024-02-20T13:56:26 IST" name="Suite" finished-at="2024-02-20T13:56:43 IST" duration-ms="16953">
     <groups>
       <group name="full test">
-        <method signature="StandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" name="submitOrder" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
-        <method signature="StandAloneTest.orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" name="orderHistry" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
+        <method signature="StandAloneTest.failTest()[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" name="failTest" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
+        <method signature="StandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" name="submitOrder" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
+        <method signature="StandAloneTest.orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" name="orderHistry" class="rahulshettyacademyShopping.website.Tests.StandAloneTest"/>
       </group> <!-- full test -->
     </groups>
-    <test started-at="2024-02-20T10:54:21 IST" name="Test" finished-at="2024-02-20T10:54:39 IST" duration-ms="18092">
+    <test started-at="2024-02-20T13:56:26 IST" name="Test" finished-at="2024-02-20T13:56:43 IST" duration-ms="16953">
       <class name="rahulshettyacademyShopping.website.Tests.StandAloneTest">
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:21 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-20T10:54:30 IST" duration-ms="9198" status="PASS">
+        <test-method retried="true" signature="failTest()[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" started-at="2024-02-20T13:56:26 IST" name="failTest" finished-at="2024-02-20T13:56:26 IST" duration-ms="23" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at rahulshettyacademyShopping.website.Tests.StandAloneTest.failTest(StandAloneTest.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failTest -->
+        <test-method signature="failTest()[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" started-at="2024-02-20T13:56:26 IST" name="failTest" finished-at="2024-02-20T13:56:26 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at rahulshettyacademyShopping.website.Tests.StandAloneTest.failTest(StandAloneTest.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failTest -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" started-at="2024-02-20T13:56:26 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-20T13:56:36 IST" duration-ms="9655" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:30 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-20T10:54:33 IST" duration-ms="2934" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" started-at="2024-02-20T13:56:36 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-20T13:56:38 IST" duration-ms="2091" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +114,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:33 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-20T10:54:36 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="3071" status="PASS">
+        <test-method signature="orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" started-at="2024-02-20T13:56:38 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-20T13:56:40 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="2280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +125,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistry -->
-        <test-method signature="orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@1a942c18]" started-at="2024-02-20T10:54:36 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-20T10:54:39 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="2836" status="PASS">
+        <test-method signature="orderHistry(java.util.HashMap)[pri:0, instance:rahulshettyacademyShopping.website.Tests.StandAloneTest@3ad2e17]" started-at="2024-02-20T13:56:40 IST" name="orderHistry" data-provider="getData" finished-at="2024-02-20T13:56:43 IST" depends-on-methods="rahulshettyacademyShopping.website.Tests.StandAloneTest.submitOrder" duration-ms="2819" status="PASS">
           <params>
             <param index="0">
               <value>

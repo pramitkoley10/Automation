@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="rahulshettyacademyShopping.website.Tests.StandAloneTest" class="method navigator-link" hash-for-method="failTest">failTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="rahulshettyacademyShopping.website.Tests.StandAloneTest" class="method navigator-link" hash-for-method="failTest">failTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,6 +161,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">rahulshettyacademyShopping.website.Tests.StandAloneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="failTest">
+                  </a> <!-- failTest -->
+                  <span class="method-name">failTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at rahulshettyacademyShopping.website.Tests.StandAloneTest.failTest(StandAloneTest.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">rahulshettyacademyShopping.website.Tests.StandAloneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="failTest">
+                  </a> <!-- failTest -->
+                  <span class="method-name">failTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at rahulshettyacademyShopping.website.Tests.StandAloneTest.failTest(StandAloneTest.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -193,6 +269,9 @@
       &lt;include name=&quot;full test&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;rahulshettyacademyShopping.website.TestsComponent.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;rahulshettyacademyShopping.website.Tests.StandAloneTest&quot;/&gt;
@@ -223,6 +302,10 @@
               <span class="test-group-name">full test</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">failTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">orderHistry</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -247,28 +330,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'rahulshettyacademyShopping.website.Tests.StandAloneTest')
-data.setCell(0, 3, 9198);
+data.setCell(0, 3, 9655);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'orderHistry')
 data.setCell(1, 2, 'rahulshettyacademyShopping.website.Tests.StandAloneTest')
-data.setCell(1, 3, 3071);
+data.setCell(1, 3, 2819);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'submitOrder')
+data.setCell(2, 1, 'orderHistry')
 data.setCell(2, 2, 'rahulshettyacademyShopping.website.Tests.StandAloneTest')
-data.setCell(2, 3, 2934);
+data.setCell(2, 3, 2280);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'orderHistry')
+data.setCell(3, 1, 'submitOrder')
 data.setCell(3, 2, 'rahulshettyacademyShopping.website.Tests.StandAloneTest')
-data.setCell(3, 3, 2836);
+data.setCell(3, 3, 2091);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'failTest')
+data.setCell(4, 2, 'rahulshettyacademyShopping.website.Tests.StandAloneTest')
+data.setCell(4, 3, 23);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'failTest')
+data.setCell(5, 2, 'rahulshettyacademyShopping.website.Tests.StandAloneTest')
+data.setCell(5, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -296,20 +387,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">rahulshettyacademyShopping.website.Tests.StandAloneTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">submitOrder({productname=ADIDAS ORIGINAL, password=Password@123, username=Pramitkoley@mail.com})</span>
+                <span class="method-name">failTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">failTest</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({productname=ADIDAS ORIGINAL, password=Password@123, username=Pramitkoley@mail.com})</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">submitOrder({productname=IPHONE 13 PRO, password=Pramitkoley@mail.com, username=Password@123})</span>
-                <span class="method-start">9202 ms</span>
+                <span class="method-start">9703 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">orderHistry({productname=ADIDAS ORIGINAL, password=Password@123, username=Pramitkoley@mail.com})</span>
-                <span class="method-start">12144 ms</span>
+                <span class="method-start">11799 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">orderHistry({productname=IPHONE 13 PRO, password=Pramitkoley@mail.com, username=Password@123})</span>
-                <span class="method-start">15218 ms</span>
+                <span class="method-start">14081 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

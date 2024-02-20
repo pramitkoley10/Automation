@@ -16,6 +16,7 @@ import rahulshettyacademyShopping.website.PageObjects.OrderHistry;
 import rahulshettyacademyShopping.website.PageObjects.ProductCatalogue;
 import rahulshettyacademyShopping.website.PageObjects.landingpage;
 import rahulshettyacademyShopping.website.TestsComponent.BaseTest;
+import rahulshettyacademyShopping.website.TestsComponent.Retry;
 
 public class StandAloneTest extends BaseTest {
 
@@ -79,6 +80,11 @@ public class StandAloneTest extends BaseTest {
 			driver.close();
 		}
 
+	}
+	@Test(groups="full test",retryAnalyzer=Retry.class)
+	public void failTest() {
+		
+		Assert.assertTrue(false);
 	}
 
 //	@DataProvider
