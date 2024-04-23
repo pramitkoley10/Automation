@@ -4,9 +4,9 @@ import java.util.Optional;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v120.fetch.Fetch;
-import org.openqa.selenium.devtools.v121.network.Network;
-import org.openqa.selenium.devtools.v121.network.model.Response;
+import org.openqa.selenium.devtools.v123.fetch.Fetch;
+import org.openqa.selenium.devtools.v123.network.Network;
+import org.openqa.selenium.devtools.v123.network.model.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,6 +15,7 @@ public class Main {
 	public static void main() throws InterruptedException {
 		
 		ChromeDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:/PathToChromeDriver/chromedriver.exe");
 		DevTools devTools = driver.getDevTools();
 		devTools.createSession();
 		devTools.send(Fetch.enable(Optional.empty(), Optional.empty()));
