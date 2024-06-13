@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Driver {
 
@@ -7,7 +8,8 @@ public class Driver {
 	
 	public static WebDriver driverBase() {
     
-		 driver = new ChromeDriver();
+		ChromeOptions options =new ChromeOptions();
+		 driver = new ChromeDriver(options);
 		
 		driver.manage().window().maximize();
 		return driver;

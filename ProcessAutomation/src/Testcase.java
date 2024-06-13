@@ -1,19 +1,10 @@
 import java.io.File;
 import java.io.IOException;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Optional;
-import java.util.Random;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.HasDevTools;
-import org.openqa.selenium.devtools.v123.log.Log;
-import org.openqa.selenium.devtools.v123.runtime.Runtime;
 import org.openqa.selenium.devtools.v123.network.Network;
 import org.openqa.selenium.devtools.v123.network.model.Response;
 import org.testng.annotations.Test;
@@ -65,7 +56,7 @@ public class Testcase extends Driver {
 		});
 		
 		
-		
+		 
 		
 				devTools.addListener(Network.responseReceived(), responseA -> {
 					System.out.println(responseA.getResponse().getStatus());
