@@ -1,0 +1,13 @@
+[RemoteTestNG] detected TestNG version 7.4.0
+Total Time for page load - 59
+getAllFeedbackData Request send - true
+Page loaded in 320 milliseconds
+ApiLoadTime - 702 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+===============================================
+Suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+

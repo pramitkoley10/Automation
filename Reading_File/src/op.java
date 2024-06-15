@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.testng.annotations.Test;
+
 public class op {
  public ArrayList<String> to() throws FileNotFoundException {
 	File file = new File("//Users//pramitk//eclipse-workspace//Reading_File//src//File.txt");
