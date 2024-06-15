@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cpnc.CPnC.Driver">
+      <class name="com.cpnc.CPnCAddFeedback.AddFeedback">
         <methods>
-          <include name="login"/>
+          <include name="addFeedback"/>
         </methods>
-      </class> <!-- com.cpnc.CPnC.Driver -->
+      </class> <!-- com.cpnc.CPnCAddFeedback.AddFeedback -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
