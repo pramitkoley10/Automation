@@ -1,8 +1,11 @@
 [RemoteTestNG] detected TestNG version 7.4.0
-Total Time for page load - 59
+Jun 17, 2024 5:29:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+Total Time for page load - 135
+Page loaded in 341 milliseconds
 getAllFeedbackData Request send - true
-Page loaded in 320 milliseconds
-ApiLoadTime - 702 milliseconds
+getAllFeedbackData Request send - true
+ApiLoadTime - 1202 milliseconds
 Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
 Status - 200
 

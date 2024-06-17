@@ -26,7 +26,7 @@ public class fileReader {
 			String b = "";
 			while((a = bf.readLine()) != null ) {
 				if(a.contains("[RemoteTestNG]") == false) {
-			               b=b+ '\n'+a;
+			               b=b+ System.getProperty("line.separator")+a;
 				}
 			}
 			

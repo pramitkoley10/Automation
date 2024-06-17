@@ -1,14 +1,11 @@
 package com.cpnc.CPnCAddFeedback;
 
 import java.io.File;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 
 public class AddFeedback {
 	@Test(dataProvider="numberOfApiCalls")
