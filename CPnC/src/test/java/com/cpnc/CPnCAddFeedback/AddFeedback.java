@@ -4,18 +4,19 @@ import java.io.File;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class AddFeedback {
-	@Test
-	public static void addFeedback() {
-		String path = System.getProperty("user.dir")+"//Свет_от_деревни_-_panoramio.jpg";
+	@Test(dataProvider="numberOfApiCalls")
+	public static void addFeedback(int number) {
+		String path = System.getProperty("user.dir")+"//20240617121222631613.png";
 		 File upload = new File(path);
 
-
+//		 AddFeedback data = new AddFeedback();
 		
 		
 //		
@@ -71,8 +72,8 @@ public class AddFeedback {
 			    .all()
 			    .multiPart("feedbackFile", upload, "multipart/form-data") // Use multiPart for file upload
 			    .formParam("feedbackId", "0")
-			    .formParam("environmentKey", "FR0 73GfTAU m5vGnA QnYF/fbWuXskinAXHNzVgTTUZ 5rg3bEfsrJq/5WMp5gNTeIPYKRjs8dCqm85nPLCqQ==")
-		        .formParam("feedback", "Auto genarated")
+			    .formParam("environmentKey", "FR0+73GfTAU+m5vGnA+QnYF/fbWuXskinAXHNzVgTTUZ+5rg3bEfsrJq/5WMp5gNTeIPYKRjs8dCqm85nPLCqQ==")
+		        .formParam("feedback", "Auto genarated "+number)
 		        .formParam("pageUrl", "https://localhost.com/data/")
 		
 		        .formParam("pageTitle", "LocalHost")
@@ -105,6 +106,19 @@ public class AddFeedback {
 		
 		
 	}
+	
+	@DataProvider
+	public Object[] numberOfApiCalls() {
+		Object[] data = new Object[5];
+		int n = 5;
+		for(int i=0;i<=n-1;i++) {
+			data[i] = i;
+			
+		}
+		return data;
+	}
+	
+	
 }
 
 
