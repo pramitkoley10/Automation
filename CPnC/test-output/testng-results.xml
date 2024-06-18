@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T14:49:34 IST" name="Suite" finished-at="2024-06-18T14:51:16 IST" duration-ms="101598">
+  <suite started-at="2024-06-18T19:21:58 IST" name="Suite" finished-at="2024-06-18T19:23:42 IST" duration-ms="104468">
     <groups>
     </groups>
-    <test started-at="2024-06-18T14:49:34 IST" name="Test" finished-at="2024-06-18T14:51:16 IST" duration-ms="101598">
+    <test started-at="2024-06-18T19:21:58 IST" name="Test" finished-at="2024-06-18T19:23:42 IST" duration-ms="104468">
       <class name="com.cpnc.CPnC.Driver">
-        <test-method signature="login(int)[pri:0, instance:com.cpnc.CPnC.Driver@2bb3058]" started-at="2024-06-18T14:49:34 IST" name="login" data-provider="runTime" finished-at="2024-06-18T14:50:23 IST" duration-ms="49030" status="PASS">
+        <test-method signature="login(int)[pri:0, instance:com.cpnc.CPnC.Driver@130e116b]" started-at="2024-06-18T19:21:58 IST" name="login" data-provider="runTime" finished-at="2024-06-18T19:22:50 IST" duration-ms="52604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(int)[pri:0, instance:com.cpnc.CPnC.Driver@2bb3058]" started-at="2024-06-18T14:50:23 IST" name="login" data-provider="runTime" finished-at="2024-06-18T14:51:16 IST" duration-ms="52511" status="PASS">
+        <test-method signature="login(int)[pri:0, instance:com.cpnc.CPnC.Driver@130e116b]" started-at="2024-06-18T19:22:50 IST" name="login" data-provider="runTime" finished-at="2024-06-18T19:23:42 IST" duration-ms="51812" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -13,6 +13,8 @@ import org.openqa.selenium.devtools.v125.network.model.Request;
 import org.openqa.selenium.devtools.v125.network.model.Response;
 import org.openqa.selenium.support.PageFactory;
 
+import com.cpnc.CPnC.TimesofRun.RunTime;
+
 import ConsolFileReader.WriteIntoFile;
 
 public class PncDashboard {
@@ -24,7 +26,7 @@ public class PncDashboard {
 	
 	public void pncBoard() throws InterruptedException, IOException {
 		Thread.sleep(10000);
-		driver.findElement(By.id("newUserDefaultClose")).click();
+//		driver.findElement(By.id("newUserDefaultClose")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@class='companyList']/ul/li[2]")).click();
 		Thread.sleep(2000);
@@ -131,6 +133,8 @@ public class PncDashboard {
 	    Thread.sleep(10000);
 	    WriteIntoFile list2 =new WriteIntoFile();
 	    list2.writeText(list);
+	    RunTime report = new RunTime();
+	    report.createReport(list);
 	}
 
 }

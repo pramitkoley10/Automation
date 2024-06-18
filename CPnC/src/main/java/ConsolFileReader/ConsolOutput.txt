@@ -1,6 +1,6 @@
-Total Time for page load - 64
+Total Time for page load - 52
 getAllFeedbackData Request send - true
-Page loaded in -407
-ApiLoadTime - 857 milliseconds
+Page loaded in -625
+ApiLoadTime - 1076 milliseconds
 Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
 Status - 200
