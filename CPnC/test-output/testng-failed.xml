@@ -8,7 +8,7 @@
     <classes>
       <class name="com.cpnc.CPnC.Driver">
         <methods>
-          <include name="login"/>
+          <include name="login" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.cpnc.CPnC.Driver -->
     </classes>

@@ -1,5 +1,7 @@
 package com.cpnc.CPnC;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +15,7 @@ public class LoginPage{
 				PageFactory.initElements(driver, this);
 	}
 
-		public void loginPage() throws InterruptedException {
+		public void loginPage() throws InterruptedException, IOException {
 		driver.get("https://qa.cleversort.com/org/8gg-wi/project/1/pnc/feedback-board");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("pramit.koley@digitalavenues.com");

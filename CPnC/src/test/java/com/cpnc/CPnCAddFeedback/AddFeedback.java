@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 
 public class AddFeedback {
-	@Test(dataProvider="numberOfApiCalls")
-	public static void addFeedback(int number) {
+	//@Test(dataProvider="numberOfApiCalls")
+	public void addFeedback(int number) {
 		String path = System.getProperty("user.dir")+"//20240617121222631613.png";
 		 File upload = new File(path);
 
@@ -104,16 +104,25 @@ public class AddFeedback {
 		
 	}
 	
-	@DataProvider
-	public Object[] numberOfApiCalls() {
-		Object[] data = new Object[5];
-		int n = 5;
+	//@DataProvider
+	
+	public void numberOfApiCalls() {
+		int n = 0;
+		//Object[] data = new Object[n];
+		
 		for(int i=0;i<=n-1;i++) {
-			data[i] = i;
+			//data[i] = i;
+			AddFeedback af = new AddFeedback();
+			af.addFeedback(i);
 			
 		}
-		return data;
+		//return data;
 	}
+	
+	
+	
+	
+	
 	
 	
 }
