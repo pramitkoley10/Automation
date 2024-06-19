@@ -1,6 +1,7 @@
 package com.cpnc.CPnC;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -12,6 +13,8 @@ import org.openqa.selenium.devtools.v125.network.Network;
 import org.openqa.selenium.devtools.v125.network.model.Request;
 import org.openqa.selenium.devtools.v125.network.model.Response;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.cpnc.CPnC.TimesofRun.outputReport;
 
@@ -48,6 +51,7 @@ public class PncDashboard {
 	
 	public void emulatePageload() throws InterruptedException, IOException {
 		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 		//WriteIntoFile list =new WriteIntoFile();
 		ArrayList<String> list = new ArrayList<String>();
@@ -57,12 +61,13 @@ public class PncDashboard {
 		long start = System.currentTimeMillis();
 
 		driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("pncSection")));
 
 		long finish = System.currentTimeMillis();
 		long totalTime = finish - start; 
-		System.out.println("Total Time for page load - "+totalTime); 
+		System.out.println("Total Time for page load - "+totalTime+" milliseconds"); 
 		
-		String a = "Total Time for page load - "+ Long.toString(totalTime);
+		String a = "Total Time for page load - "+ Long.toString(totalTime)+" milliseconds";
 		list.add(a);
 		Thread.sleep(5000);
 		
@@ -90,14 +95,14 @@ public class PncDashboard {
 	            });
 	    long st = System.currentTimeMillis();
 	    
-	    long startTime = System.currentTimeMillis();
-	    driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
-	    long endTime = System.currentTimeMillis();
-
-	    System.out.println("Page loaded in - " + (endTime - startTime) + " milliseconds");
-	    
-	    String y = "Page loaded in - "+ Long.toString(endTime - startTime);
-		list.add(y);
+//	    long startTime = System.currentTimeMillis();
+//	    driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
+//	    long endTime = System.currentTimeMillis();
+//
+//	    System.out.println("Page loaded in - " + (endTime - startTime) + " milliseconds");
+//	    
+//	    String y = "Page loaded in - "+ Long.toString(endTime - startTime);
+//		list.add(y);
 	    
 		
 	   
@@ -132,8 +137,7 @@ public class PncDashboard {
 	    
 	    Thread.sleep(10000);
 	    
-	    ArrayList<String> listout = new ArrayList<String>();
-	    listout = list;
+	    
 	    outputReport report1 = new outputReport();
 	    report1.createReport(list);
 	    

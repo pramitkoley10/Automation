@@ -32,8 +32,8 @@ public class outputReport {
 		
 		
 		
-		
-//		wr.newLine();
+		wr.append("Slot----------------------------------");
+		wr.newLine();
 		int k = 0;
 		for(int i=0;i<list.size();i++) {
 		  

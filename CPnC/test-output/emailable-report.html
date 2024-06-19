@@ -9,11 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">138,110</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">111,118</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.cpnc.CPnC.Driver</td><td><a href="#m0">login</a></td><td rowspan="2">1718796250902</td><td rowspan="2">68749</td></tr><tr class="passedeven"><td><a href="#m1">login</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cpnc.CPnC.Driver</td><td><a href="#m0">login</a></td><td rowspan="1">1718803710086</td><td rowspan="1">46099</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.cpnc.CPnC.Driver</td><td><a href="#m1">login</a></td><td rowspan="1">1718803645101</td><td rowspan="1">64906</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.cpnc.CPnC.Driver#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.cpnc.CPnC.Driver#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.cpnc.CPnC.Driver#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.62)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5de54df797c738d5262836b323b2d6f5, findElement {value=//ul/li[4]/div/span[@class=&apos;itemName&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.62, chrome: {chromedriverVersion: 126.0.6478.62 (b2781ca4c383..., userDataDir: /var/folders/c0/x0p_jxwx7qd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54413/devtoo..., se:cdpVersion: 126.0.6478.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5de54df797c738d5262836b323b2d6f5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.cpnc.CPnC.PncDashboard.pncBoard(PncDashboard.java:38)
+	at com.cpnc.CPnC.LoginPage.loginPage(LoginPage.java:25)
+	at com.cpnc.CPnC.Driver.login(Driver.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cpnc.CPnC.Driver#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
