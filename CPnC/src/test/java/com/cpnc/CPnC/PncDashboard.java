@@ -13,7 +13,7 @@ import org.openqa.selenium.devtools.v125.network.model.Request;
 import org.openqa.selenium.devtools.v125.network.model.Response;
 import org.openqa.selenium.support.PageFactory;
 
-import com.cpnc.CPnC.TimesofRun.RunTime;
+import com.cpnc.CPnC.TimesofRun.outputReport;
 
 import ConsolFileReader.WriteIntoFile;
 
@@ -94,9 +94,9 @@ public class PncDashboard {
 	    driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
 	    long endTime = System.currentTimeMillis();
 
-	    System.out.println("Page loaded in -" + (endTime - startTime) + " milliseconds");
+	    System.out.println("Page loaded in - " + (endTime - startTime) + " milliseconds");
 	    
-	    String y = "Page loaded in -"+ Long.toString(endTime - startTime);
+	    String y = "Page loaded in - "+ Long.toString(endTime - startTime);
 		list.add(y);
 	    
 		
@@ -131,10 +131,15 @@ public class PncDashboard {
 	            });
 	    
 	    Thread.sleep(10000);
+	    
+	    ArrayList<String> listout = new ArrayList<String>();
+	    listout = list;
+	    outputReport report1 = new outputReport();
+	    report1.createReport(list);
+	    
 	    WriteIntoFile list2 =new WriteIntoFile();
 	    list2.writeText(list);
-	    RunTime report = new RunTime();
-	    report.createReport(list);
+	    
 	}
 
 }

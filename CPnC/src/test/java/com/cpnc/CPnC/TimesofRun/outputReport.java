@@ -6,36 +6,19 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-//import org.testng.annotations.DataProvider;
-//
-//@DataProvider
-public class RunTime {
-//	
-//	public static Object[] runTime() {
-//		int n = 1;
-//		Object[] data = new Object[n];
-//		
-//		for(int i=0;i<=n-1;i++) {
-//			data[i] = i;
-//			
-//			
-//		}
-//		return data;
-//	}
-//	
-//
-	
-	
+
+public class outputReport {	
 	  
-public void createReport(ArrayList<String> list) throws IOException  {
+    public void createReport(ArrayList<String> list) throws IOException  {
 		
 		
 		
-		String path = System.getProperty("user.dir")+"//Reports//Report.txt";
+		String path = System.getProperty("user.dir")+"//Reports//outputreport.txt";
 		File file = new File(path);
 		
 		
-		
+		System.out.println(list.size()); 
+
 		
 		FileWriter read = null;
 		try {
@@ -61,13 +44,13 @@ public void createReport(ArrayList<String> list) throws IOException  {
 			if(k<list.size()) {
 			  wr.newLine();
 			}
-		
-		  
+		System.out.println(list.get(i)+"OkOk") ; 
 		  
 		}
-		
+		wr.newLine();
+		wr.newLine();
 			wr.close();
-			list.clear();
+			
 			
 	}
 }

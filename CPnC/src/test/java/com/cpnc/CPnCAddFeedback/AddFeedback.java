@@ -2,9 +2,6 @@ package com.cpnc.CPnCAddFeedback;
 
 import java.io.File;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 
 public class AddFeedback {
