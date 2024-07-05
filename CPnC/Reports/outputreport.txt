@@ -1,5 +1,352 @@
+Slot----------------------------------
 
+Total Time for page load - 139 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - -1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - -1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - -1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
 
 Slot----------------------------------
-Total Time for page load - 194 milliseconds
+
+Total Time for page load - 142 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 141 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 131 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 154 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 2 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 2 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 2 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 140 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 161 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 123 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 124 milliseconds
+
+Slot----------------------------------
+
+Total Time for page load - 118 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 151 milliseconds
+
+Slot----------------------------------
+
+Total Time for page load - 145 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 139 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 203 milliseconds
+
+Slot----------------------------------
+
+Total Time for page load - 150 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 143 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 133 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 110 milliseconds
+
+Slot----------------------------------
+
+Total Time for page load - 140 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 128 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 159 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 131 milliseconds
+
+Slot----------------------------------
+
+Total Time for page load - 162 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 153 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 207 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 0 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 370 milliseconds
+
+Slot----------------------------------
+
+Total Time for page load - 338 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 2 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 2 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
+
+Slot----------------------------------
+
+Total Time for page load - 238 milliseconds
+getAllFeedbackData Request send - true
+getAllFeedbackData Request send - true
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 204
+ApiLoadTime - 1 milliseconds
+Url - https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData
+Status - 200
 

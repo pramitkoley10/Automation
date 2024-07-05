@@ -12,6 +12,7 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v125.network.Network;
 import org.openqa.selenium.devtools.v125.network.model.Request;
 import org.openqa.selenium.devtools.v125.network.model.Response;
+import org.openqa.selenium.devtools.v125.performance.Performance;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -58,18 +59,18 @@ public class PncDashboard {
 		
 		
 		
-		long start = System.currentTimeMillis();
-
-		driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("pncSection")));
-
-		long finish = System.currentTimeMillis();
-		long totalTime = finish - start; 
-		System.out.println("Total Time for page load - "+totalTime+" milliseconds"); 
-		
-		String a = "Total Time for page load - "+ Long.toString(totalTime)+" milliseconds";
-		list.add(a);
-		Thread.sleep(5000);
+//		long start = System.currentTimeMillis();
+//
+//		driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("pncSection")));
+//
+//		long finish = System.currentTimeMillis();
+//		long totalTime = finish - start; 
+//		System.out.println("Total Time for page load - "+totalTime+" milliseconds"); 
+//		
+//		String a = "Total Time for page load - "+ Long.toString(totalTime)+" milliseconds";
+//		list.add(a);
+//		Thread.sleep(5000);
 		
 		
 		
@@ -78,14 +79,14 @@ public class PncDashboard {
 	    devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 	   // devTools.send(Network.emulateNetworkConditions(false,100,200000,100000,Optional.of(ConnectionType.ETHERNET)));
 			
-	  
+	    ArrayList<Long> time = new ArrayList<Long>();
 	    
 	    devTools.addListener(Network.requestWillBeSent(),
 	            request -> {
 	                Request req= request.getRequest();
 	                if( req.getUrl().contains("getAllFeedbackData")) {
 	                	
-	                
+	                	 time.add( System.currentTimeMillis());
 	                System.out.println("getAllFeedbackData Request send - " + req.getUrl().contains("https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData"));
 	           
 	                Boolean b = req.getUrl().contains("https://api-qa.cleversort.com/api/v1/feedback/getAllFeedbackData");
@@ -93,7 +94,7 @@ public class PncDashboard {
 	                list.add(x);
 	                }
 	            });
-	    long st = System.currentTimeMillis();
+	//    long st = System.currentTimeMillis();
 	    
 //	    long startTime = System.currentTimeMillis();
 //	    driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
@@ -111,13 +112,33 @@ public class PncDashboard {
 	            response -> {
 	                Response res= response.getResponse();
 	                if( res.getUrl().contains("getAllFeedbackData")) {
-	                	long et = System.currentTimeMillis();
+	                	time.add(System.currentTimeMillis());
 	                	
+	                	System.out.println(res.getTiming().get().getSendStart());
+	                	System.out.println(res.getTiming().get().getSendEnd());
+	                	       System.out.println(res.getTiming().get().getConnectStart());
+	                	       System.out.println(res.getTiming().get().getConnectEnd());
+	                	       System.out.println(res.getTiming().get().getProxyEnd());
+	                	       System.out.println(res.getTiming().get().getProxyStart());
+	                	       System.out.println(res.getTiming().get().getRequestTime());
+	                	       System.out.println(res.getTiming().get().getDnsEnd());
+	                	       System.out.println(res.getTiming().get().getDnsStart());
+	                	       System.out.println(res.getTiming().get().getPushEnd());
+	                	       System.out.println(res.getTiming().get().getPushStart());
+	                	       System.out.println(res.getTiming().get().getReceiveHeadersEnd());
+	                	       System.out.println(res.getTiming().get().getReceiveHeadersStart());
+	                	       System.out.println(res.getTiming().get().getSslEnd());
+	                	       System.out.println(res.getTiming().get().getSslStart());
+	                	       System.out.println(res.getTiming().get().getWorkerFetchStart());
+	                	       System.out.println(res.getTiming().get().getWorkerReady());
+	                	       System.out.println(res.getTiming().get().getWorkerRespondWithSettled());
+	                	       System.out.println(res.getTiming().get().getWorkerStart());
+	                	       
+	                	//System.out.println(res.ti);
 	                	
-	                	
-	                System.out.println("ApiLoadTime - " + (et - st) + " milliseconds");
+	                System.out.println("ApiLoadTime - " + (time.get(1) - time.get(0)) + " milliseconds");
 	                
-	                String k = "ApiLoadTime - "+ Long.toString(et - st)+ " milliseconds";
+	                String k = "ApiLoadTime - "+ Long.toString(time.get(1) - time.get(0))+ " milliseconds";
 	        		list.add(k);
 	                
 	                System.out.println("Url - " + res.getUrl());
@@ -134,6 +155,22 @@ public class PncDashboard {
 	                
 	                }
 	            });
+	    
+	    
+	    long start = System.currentTimeMillis();
+
+		driver.findElement(By.xpath("//ul/li[2]/div/span[@class='itemName']")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("pncSection")));
+
+		long finish = System.currentTimeMillis();
+		long totalTime = finish - start; 
+		System.out.println("Total Time for page load - "+totalTime+" milliseconds"); 
+		
+		String a = "Total Time for page load - "+ Long.toString(totalTime)+" milliseconds";
+		list.add(a);
+		//Thread.sleep(5000);
+	    
+	    
 	    
 	    Thread.sleep(10000);
 	    

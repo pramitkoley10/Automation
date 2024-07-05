@@ -34,6 +34,8 @@ public class outputReport {
 		
 		wr.append("Slot----------------------------------");
 		wr.newLine();
+		wr.append("");
+		wr.newLine();
 		int k = 0;
 		for(int i=0;i<list.size();i++) {
 		  
@@ -47,8 +49,11 @@ public class outputReport {
 		System.out.println(list.get(i)+"OkOk") ; 
 		  
 		}
+		
 		wr.newLine();
+		wr.append("");
 		wr.newLine();
+		wr.append("");
 			wr.close();
 			
 			

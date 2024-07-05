@@ -18,7 +18,7 @@ public class Driver {
 	   driver.manage().window().maximize();
        return driver;
 	}
-	@Test(dataProvider = "runTime")
+	@Test(dataProvider = "runTime", invocationCount = 5, threadPoolSize = 5)
 	public static void login(int data) throws InterruptedException, IOException {
 		
 		AddFeedback af = new AddFeedback();
@@ -31,7 +31,7 @@ public class Driver {
 	}
 	
 	
-	@DataProvider	
+	@DataProvider(parallel= false)	
 	public static Object[] runTime() {
 		int n = 2;
 		Object[] data = new Object[n];
