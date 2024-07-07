@@ -17,7 +17,7 @@ public class LoginPage{
 
 		public void loginPage() throws InterruptedException, IOException {
 		driver.get("https://qa.cleversort.com/org/8gg-wi/project/1/pnc/feedback-board");
-		Thread.sleep(10000);
+		Thread.sleep(30000);
 		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("pramit.koley@digitalavenues.com");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Password@123");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();

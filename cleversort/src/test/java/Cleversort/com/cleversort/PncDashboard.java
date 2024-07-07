@@ -47,12 +47,17 @@ public class PncDashboard {
 		driver.findElement(By.xpath("//div[@class='createNewSecMainContent']//input")).sendKeys("TEST NEW");
 		driver.findElement(By.xpath("//div[@class='createNewSecMainContent']//input")).sendKeys(Keys.ENTER);
 //		driver.findElement(By.xpath("//div/div[@class=\"createNewSecMainContent\"]/div/div/div/div/span[@class='section-text-span']")).sendKeys("Test");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div/div[@class='createNewSecMainContent'][1]/div[1]/div/span")).click();
 		
 		
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//li[5]/span[@class='ant-dropdown-menu-title-content']")).click();
+		
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='deleteBtnStyle']")).click();
 		
 		System.out.println("completed");
-		
-		
 //		
 //		clickOn(btn_CreateNewWidget);
 //		
